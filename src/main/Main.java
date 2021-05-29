@@ -37,7 +37,7 @@ public class Main {
                     rectLength = in.nextDouble();
                     System.out.println("Please enter the width of the rectangle in meters.");
                     rectWidth = in.nextDouble();
-                    System.out.println("The area of the rectangle is " + (rectLength*rectWidth) + " meters.");
+                    System.out.println("The area of the rectangle is " + (rectLength*rectWidth) + " meters squared.");
                     break;    
                 case (3):
                     System.out.println("Please enter the radius of the circle in meters.");
@@ -47,7 +47,7 @@ public class Main {
                 case (4):
                     System.out.println("Please enter the radius of the circle in meters.");
                     circleRadius = in.nextDouble();
-                    System.out.println("The area of the circle is " + (Math.PI * circleRadius * circleRadius) + " meters.");   
+                    System.out.println("The area of the circle is " + (Math.PI * circleRadius * circleRadius) + " meters squared.");   
                     break;
                 case (5):
                     System.out.println("Thank you for using this program.");
@@ -57,6 +57,7 @@ public class Main {
                     System.out.println("Error - please enter a valid number.");
             } 
         }
+        in.close();
     }
     
 }
